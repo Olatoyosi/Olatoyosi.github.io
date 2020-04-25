@@ -78,6 +78,9 @@ a:hover {
         grid-template-columns: auto;
         margin-top: 10px;
     }
+    #header {
+        height: 200px;
+    }
 }
 
 .img img {
