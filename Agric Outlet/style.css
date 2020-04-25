@@ -1,0 +1,102 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(148, 182, 146);
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+}
+
+#wrap {
+    background-color: white;
+}
+
+#wrap, .img {
+    box-shadow: 5px 2px 4px grey;
+}
+
+div {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#nav {
+    height: fit-content;
+    background-color: rgb(83, 109, 83);
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 2px;
+}
+
+a:hover {
+    background-color: honeydew;
+    color: green;
+}
+
+#header {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url("http://watchfit.com/wp-content/uploads/2015/12/raw-vs-cooked-vegetables_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+#groceries {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+}
+
+.img {
+    display: inline-grid;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    color: honeydew;
+    background-color: rgb(83, 109, 83);
+}
+
+.img img {
+    width: 100%;
+    height: 180px;
+}
+
+form {
+    text-align: center;
+}
+
+form div {
+    margin: 10px auto;
+}
+
+input {
+    height: 20px;
+    border: 1px solid black;
+}
+
+.details {
+    border-radius: 25px;
+    height: 40px;
+    width: 500px;
+}
+
+.num {
+    width: 30px;
+}
+
