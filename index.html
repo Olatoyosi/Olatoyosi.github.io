@@ -51,49 +51,75 @@
             </div>
         </div>
         <div id="order">
-            <form action="mailto:olabamijiolatoyosi@gmail.com" method="POST" enctype="text/plain"> 
+            <form action="mailto:abdullahij951@gmail.com" method="POST" enctype="text/plain"> 
                 <div>
                     <h2>Fullname</h2>
-                    <input type="text" name="name" class="details">
+                    <input type="text" name="name" class="details" required>
                 </div>
                 <div>
                     <h2>Phone Number</h2>
-                    <input type="tel" name="number" class="details">
+                    <input type="tel" name="number" class="details" required>
                 </div>
                 <div>
                     <h2>Email</h2>
-                    <input type="mail" name="mail" class="details">
+                    <input type="mail" name="mail" class="details" required>
                 </div>
                 <div>
-                    <h2>Order</h2>
-                    <div id="orderList">
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
-                        <div id="orl">
-                            Amaratus <input type="checkbox" name="amaratus"> amount <input type="number" name="num_of_amaratus" class="num">
-                        </div>
+                    <h2>Place your order here</h2>
+                    <div id="add1">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add1')">
+                    </div>
+                    <div id="add2">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add2')">
+                    </div>
+                    <div id="add3">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add3')">
+                    </div>
+                    <div id="add4">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add4')">
+                    </div>
+                    <div id="add5">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add5')">
+                    </div>
+                    <div id="add6">
+                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add6')">
                     </div>
                 </div>
                 <div>
                     <input type="submit" value="PlaceOrder">
                 </div>
+                <div>
+                    <input type="reset" value="Reset">
+                </div>
             </form>
         </div>
-        <div id="contact"></div>
-        <div id="footer"></div>
+        <div id="contact">
+            <p><img src="images/fb.jpg" alt="Facebook">  Rosheedah Olabamiji</p> 
+            <p><img src="images/ig.jpg" alt="Instagram"> Olatoyosi Olabamiji/ Olabamiji Olatoyosi Rosheedah.</p> 
+            <p><img src="images/ad.jpg" alt="Work address"> Airport Road Mosque area Alakaia Ibadan.</p>
+            <p><img src="images/tel.jpg" alt="Tel"> +2348129391534</p>
+        </div>
+        <div id="footer"
+        ><p>Done by Jimoh Abdullahi For Coding Brosters  2.0</p>
     </div>
+    </div>
+    <!--Javascript file-->
+
+    <script>
+        function order(order, area){
+            var vary = document.getElementsByName(order);
+            if (typeof(vary) == 'undefined') {
+                var add = document.getElementById(area);
+                var child = document.getElementsByName(order);
+                add.removeChild(child);
+            } else {
+                var input = document.createElement("input");
+                input.type = "number";
+                input.name = order;
+                var add = document.getElementById(area);
+                add.appendChild(input); 
+            }
+        }
+      </script>
 </body>
 </html>

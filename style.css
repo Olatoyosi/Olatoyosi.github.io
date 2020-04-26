@@ -78,9 +78,6 @@ a:hover {
         grid-template-columns: auto;
         margin-top: 10px;
     }
-    #header {
-        height: 200px;
-    }
 }
 
 .img img {
@@ -90,6 +87,7 @@ a:hover {
 
 form {
     text-align: center;
+    
 }
 
 form div {
@@ -107,7 +105,32 @@ input {
     width: 90%;
 }
 
-.num {
-    width: 30px;
+#order {
+    background-color: rgb(83, 109, 83);
+    padding-bottom: 10px;
 }
 
+div div input {
+    width: 30%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+p {
+    width: fit-content;
+    text-align: center;
+    padding-left: 10%;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p img{
+    height: 20px;
+}
+
+#footer {
+    background-color: rgb(83, 109, 83);
+    padding: 1px 0; 
+}
