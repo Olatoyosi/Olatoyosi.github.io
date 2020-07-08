@@ -3,123 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agricultural Outlet</title>
+    <title>Rosheedah Agricultural Outlet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrap">
-        <div id="nav">
-            <a href="#header">Home</a>
-            <a href="#groceries">Groceries</a>
-            <a href="#header">Order</a>
-            <a href="#header">Contact</a>
+    <header>
+        <div id="logo">
+            Rosheedah Agricultural Outlet 
         </div>
-        <div id="header">
-            <h1>Agricultural Outlet</h1>
-            <p>The best of food</p>
-        </div>
-        <div id="groceries">
-            <div class="img">
-                <img src="images/img1.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-            <div class="img">
-                <img src="images/img2.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-            <div class="img">
-                <img src="images/img3.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-            <div class="img">
-                <img src="images/img4.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-            <div class="img">
-                <img src="images/img5.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-            <div class="img">
-                <img src="images/img6.jpeg" alt="#">
-                <h2>amaratus</h2>
-                <p>#1200</p>
-            </div>
-        </div>
-        <div id="order">
-            <form action="mailto:abdullahij951@gmail.com" method="POST" enctype="text/plain"> 
-                <div>
-                    <h2>Fullname</h2>
-                    <input type="text" name="name" class="details" required>
-                </div>
-                <div>
-                    <h2>Phone Number</h2>
-                    <input type="tel" name="number" class="details" required>
-                </div>
-                <div>
-                    <h2>Email</h2>
-                    <input type="mail" name="mail" class="details" required>
-                </div>
-                <div>
-                    <h2>Place your order here</h2>
-                    <div id="add1">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add1')">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#groc-wrapper">Groceries</a>
+            <a href="#cont-wrapper">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="heading">
+             
+            </div >
+            <div id="groc-wrapper">
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/ewedu.jpg" alt="ewedu">
                     </div>
-                    <div id="add2">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add2')">
-                    </div>
-                    <div id="add3">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add3')">
-                    </div>
-                    <div id="add4">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add4')">
-                    </div>
-                    <div id="add5">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add5')">
-                    </div>
-                    <div id="add6">
-                        <input type="button" value="Amaratus" onclick="order('amaratus', 'add6')">
+                    <div class="img-con-wrapper">
+                        <p class="content">Ewedu</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="ewedu" onClick="reply_click(this)">Add Cart</button>
                     </div>
                 </div>
-                <div>
-                    <input type="submit" value="PlaceOrder">
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/Efo-Soko.jpeg" alt="Efo-Soko">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Efo-Soko</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="efo-soko" onClick="reply_click(this)">Add Cart</button>
+                    </div>
                 </div>
-                <div>
-                    <input type="reset" value="Reset">
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/ugu.jpg" alt="ugu">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Efo Ugu</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="ugu" onClick="reply_click(this)">Add Cart</button>
+                    </div>
                 </div>
-            </form>
-        </div>
-        <div id="contact">
-            <p><img src="images/fb.jpg" alt="Facebook">  Rosheedah Olabamiji</p> 
-            <p><img src="images/ig.jpg" alt="Instagram"> Olatoyosi Olabamiji/ Olabamiji Olatoyosi Rosheedah.</p> 
-            <p><img src="images/ad.jpg" alt="Work address"> Airport Road Mosque area Alakaia Ibadan.</p>
-            <p><img src="images/tel.jpg" alt="Tel"> +2348129391534</p>
-        </div>
-        <div id="footer"
-        ><p>Done by Jimoh Abdullahi For Coding Brosters  2.0</p>
-    </div>
-    </div>
-    <!--Javascript file-->
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/carrot.jpg" alt="carrot">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Carrot</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="carrot" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/tomato.jpg" alt="tomato">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Tomato</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="tomato" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/atarodo.jpg" alt="ata-rodo">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Ata rodo</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="atarodo" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/Bawa.jpg" alt="Bawa">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Bawa</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="bawa" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/ginger.jpg" alt="ginger">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Ginger</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="ginger" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/garlic.jpg" alt="garlic">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Garlic</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="garlic" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
 
-    <script>
-        function order(order, area){
-            var vary = document.getElementsByName(order);
-            if (typeof(vary) == 'undefined') {
-                var add = document.getElementById(area);
-                var child = document.getElementsByName(order);
-                add.removeChild(child);
-            } else {
-                var input = document.createElement("input");
-                input.type = "number";
-                input.name = order;
-                var add = document.getElementById(area);
-                add.appendChild(input); 
-            }
-        }
-      </script>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/palm-oil.jpg" alt="palm oil">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Palm Oil</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="palm-oil" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+                <div class="groc-item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="image/plantain.jpg" alt="plantain">
+                    </div>
+                    <div class="img-con-wrapper">
+                        <p class="content">Plantain</p>
+                        <p class="cost">&#8358 1200</p>
+                        <button id="plantain" onClick="reply_click(this)">Add Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="order">
+                <img src="image/shopping-cart.png" alt="" id="order_img">
+                <div id="form-cover">
+                    <form method="POST" action="mailto:Olabamijiolatoyosi@gmail.com?subject=Order" id="form">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="">
+                        <label for="name">Email</label>
+                        <input type="email" name="Email" id="">
+                        <label for="name">Phone Number</label>
+                        <input type="tel" name="Number" id="">
+                        <input type="submit" value="Order">
+                    </form> 
+                </div>               
+            </div>
+            <div id="cont-wrapper">
+                <div>
+                    <h1>Announcement</h1>
+                    <p>Also weekend's pot of stew services is also available for my customers.</p>
+                </div>
+                <div id="cont">
+                    <div class="contact">
+                        <img src="image/facebook.png" alt="">
+                        <div class="contact-con"><p>Rosheedah Olabamiji</p></div>
+                    </div>
+                    <div class="contact">
+                        <img src="image/instagram.png" alt="">
+                        <div class="contact-con"><p>Olatoyosi Olabamiji/ Olabamiji Olatoyosi Rosheedah.</p></div>
+                    </div>
+                    <div class="contact">
+                        <img src="image/pin.png" alt="">
+                        <div class="contact-con"><p>Airport Road Mosque area Alakaia Ibadan.</p></div>
+                    </div>
+                    <div class="contact">
+                        <img src="image/phone-book.png" alt="">
+                        <div class="contact-con"><p>+2348129391534, 08079744918</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>    
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="func.js">
+    </script>
 </body>
 </html>
