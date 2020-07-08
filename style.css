@@ -1,136 +1,196 @@
-*{
-    box-sizing: content-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(148, 182, 146);
-    max-width: 80%;
-    min-width: 80%;
-    margin: auto;
+header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    background-color: #748b99;
 }
 
-#wrap {
-    background-color: white;
-}
-
-#wrap, .img {
-    box-shadow: 5px 2px 4px grey;
-}
 
 div {
-    width: 100%;
-    margin-bottom: 0;
+    display: inline-block;
+    padding: 10px;
 }
 
-#nav {
-    height: fit-content;
-    background-color: rgb(83, 109, 83);
+nav {
+    display: inline-block;
 }
 
 a {
     display: inline-block;
-    padding: 10px 20px;
     text-decoration: none;
-    color: white;
-    margin-right: 2px;
+    padding: 10px;
+    margin-left: 2px;
+    background-color: #748b99;
 }
 
-a:hover {
-    background-color: honeydew;
-    color: green;
-}
-
-#header {
-    display: block;
+section {
     width: 100%;
-    height: 400px;
-    background-image: url("http://watchfit.com/wp-content/uploads/2015/12/raw-vs-cooked-vegetables_1.jpg");
+    max-width: 1170px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+#heading {
+    width: 100%;
+    background-image: url("https://itk-assets.nyc3.digitaloceanspaces.com/2020/03/grocery-delivery-services-1024x690.jpg");
+    height: 500px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5px;
-    color: white;
-    text-align: center;
-    margin-top: auto;
+    margin: 10px 30px;
 }
 
-#groceries {
+#groc-wrapper, .groc-item-wrapper, #img-wrapper {
+    width: auto;
+}
+
+#groc-wrapper {
     display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 10px;
+    grid-template-columns: auto auto;
 }
-
-.img {
-    display: inline-grid;
-    width: 90%;
-    height: 250px;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    color: honeydew;
-    background-color: rgb(83, 109, 83);
-}
-
-@media screen and (max-width: 600px) {
-    #groceries {
-        display: grid;
+@media only screen and (max-width: 700px){
+    #groc-wrapper {
         grid-template-columns: auto;
-        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-.img img {
+
+
+.groc-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:white;
+    margin-bottom: 5px;
+}
+
+.img-wrapper {
+    align-self: center;
+    width: 50%;
+}
+
+img {
     width: 100%;
-    height: 180px;
 }
 
-form {
+.img-con-wrapper {
+    font-size: larger;
+    width: 50%;
     text-align: center;
-    
+    align-self: center;
 }
 
-form div {
-    margin: 10px auto;
-}
-
-input {
-    height: 20px;
-    border: 1px solid black;
-}
-
-.details {
+button {
+    padding: 10px 30px;
     border-radius: 25px;
-    height: 40px;
-    width: 90%;
+    background-color: #748b99;
+    border: none;
+}
+
+button:focus {
+    border: none;
+}
+
+.cost {
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 #order {
-    background-color: rgb(83, 109, 83);
-    padding-bottom: 10px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
-div div input {
-    width: 30%;
-    height: 30px;
+#order>img {
+    width: 50px;
+}
+
+
+.hidden+#form-cover {
+	display:none;
+}
+
+.visible+#form-cover {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 5%;
+    height: 500px;
+      
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #748b9999;
+    padding: 20px;
     border-radius: 25px;
     text-align: center;
+    color: black;
+    font-weight: bolder;
+    height: 100%;
+    overflow-y: scroll;
 }
 
-p {
-    width: fit-content;
+input {
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
     text-align: center;
-    padding-left: 10%;
-    font-size: large;
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
-p img{
-    height: 20px;
+#cont-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #748b99;
 }
 
-#footer {
-    background-color: rgb(83, 109, 83);
-    padding: 1px 0; 
+#cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact>img {
+    align-self: center;
+    width: 30px;
+}
+
+.contact-con {
+    align-self: center;
+}
+
+.groc-order {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.groc-order input {
+    width: unset;
+    border: none;
+}
+
+.groc-order label {
+    width: unset;
+    border: none;
+    justify-self: center;
+    align-self: center;
 }
